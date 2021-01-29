@@ -5,7 +5,9 @@ export const setSortBy = (name) => ({
   payload: name,
 });
 
-export const setCategory = (categoryIndex) => ({
-  type: SET_CATEGORY,
-  payload: categoryIndex,
-});
+export const setCategory = (categoryIndex) => {
+  return {
+    type: SET_CATEGORY,
+    payload: categoryIndex,
+  };
+};
